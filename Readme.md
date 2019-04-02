@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Ivan Chugunov](https://up.htmlacademy.ru/adaptive/16/user/603625).
-* Наставник: `Неизвестно`.
+* Наставник: [Юлия Антонова](https://htmlacademy.ru/profile/id39082).
 
 ---
 
