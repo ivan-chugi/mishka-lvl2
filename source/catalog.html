@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Каталог Мишка</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo" href="#">
+        <img class="page-header__logo-img" src="http://placehold.it/150x100"
+        width="150" height="100" alt="Мишка - магазин товаров ручной работы для дома">
+      </a>
+      <button class="main-nav__close" type="button" name="button"></button>
+      <nav class="main-nav">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Вязание на заказ</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--search" href="#">Поиск по сайту</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item">
+            <a class="user-list__link user-list__link--cart" href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <section class="catalog">
+        <h2 class="catalog__header section-header">Каталог товаров</h2>
+        <div class="catalog__wrapper">
+          <div class="catalog__card card">
+            <img class="card__img" width="150" height="100" src="http://placehold.it/150x100" alt="Зайчик-попрыгайчик">
+            <h3 class="card__title">Зайчик-попрыгайчик</h3>
+            <p class="card__data">Рост 30 см, вес 200 г</p>
+            <b class="card__price">1200 руб.</b>
+          </div>
+          <div class="catalog__card card">
+            <img class="card__img" width="150" height="100" src="http://placehold.it/150x100" alt="Корзинка для белья">
+            <h3 class="card__title">Корзинка для белья</h3>
+            <p class="card__data">Диаметр 15 см, высота 10 см</p>
+            <b class="card__price">690 руб.</b>
+          </div>
+          <div class="catalog__card card">
+            <img class="card__img" width="150" height="100" src="http://placehold.it/150x100" alt="Большая корзинка для игрушек">
+            <h3 class="card__title">Большая корзинка для игрушек</h3>
+            <p class="card__data">Диаметр 30 см, высота 30 см</p>
+            <b class="card__price">1500 руб.</b>
+          </div>
+        </div>
+      </section>
+      <!-- <section class="production">
+      </section> -->
+    </main>
+    <footer class="page-footer">
+      <h2 class="visually-hidden">Подвал сайта</h2>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="#">
+              <span class="visually-hidden">Instagram</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#">
+              <span class="visually-hidden">Twitter</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="copyright__logo-img" width="150" height="100" src="http://placehold.it/150x100" alt="HTML Academy">
+          </a>
+        </div>
+    </footer>
+    <section class="modal">
+      <h2 class="modal__header section-header">Добавить в корзину</h2>
+      <b class="modal__tip">Выберите размер:</b>
+      <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+        <input class="modal__radio" id="size-small" type="radio" name="size-toggle" value="small">
+        <label class="modal__radio-label modal__radio-label--small" for="size-small">S</label>
+
+        <input class="modal__radio" id="size-medium" type="radio" name="size-toggle" value="medium">
+        <label class="modal__radio-label modal__radio-label--medium" for="size-medium">M</label>
+
+        <input class="modal__radio" id="size-large" type="radio" name="size-toggle" value="large">
+        <label class="modal__radio-label" for="size-large">L</label>
+        <input class="modal__add-button button" type="submit" name="add" value="Добавить">
+      </form>
+    </section>
+  </body>
+</html>
