@@ -6,18 +6,20 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="#">
+      <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-img" src="http://placehold.it/150x100"
         width="150" height="100" alt="Мишка - магазин товаров ручной работы для дома">
       </a>
-      <button class="main-nav__close" type="button" name="button"></button>
+      <button class="page-header__button-close" type="button" name="button">
+        <span class="visually-hidden">Закрыть меню</span>
+      </button>
       <nav class="main-nav">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a class="site-list__link" href="#">Каталог товаров</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="#">Вязание на заказ</a>
+            <a class="site-list__link" href="form.html">Вязание на заказ</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link site-list__link--search" href="#">Поиск по сайту</a>
@@ -30,33 +32,51 @@
         </ul>
       </nav>
     </header>
-
     <main class="page-main">
       <section class="catalog">
-        <h2 class="catalog__header section-header">Каталог товаров</h2>
+        <h1 class="catalog__header section-header">Каталог товаров</h1>
         <div class="catalog__wrapper">
           <div class="catalog__card card">
-            <img class="card__img" width="150" height="100" src="http://placehold.it/150x100" alt="Зайчик-попрыгайчик">
-            <h3 class="card__title">Зайчик-попрыгайчик</h3>
+            <a class="card__link-img" href="zaycik.html">
+              <img class="card__img" width="150" height="100" src="http://placehold.it/150x100" alt="Зайчик-попрыгайчик">
+            </a>
+            <a class="card__title" href="zaycik.html">Зайчик-попрыгайчик</a>
             <p class="card__data">Рост 30 см, вес 200 г</p>
             <b class="card__price">1200 руб.</b>
+            <button class="card__button-cart" type="button" name="button">
+              <span class="visually-hidden">Добавить товар в корзину</span>
+            </button>
           </div>
           <div class="catalog__card card">
-            <img class="card__img" width="150" height="100" src="http://placehold.it/150x100" alt="Корзинка для белья">
-            <h3 class="card__title">Корзинка для белья</h3>
+            <a class="card__link-img" href="korzinka.html">
+              <img class="card__img" width="150" height="100" src="http://placehold.it/150x100" alt="Корзинка для белья">
+            </a>
+            <a class="card__title" href="korzinka.html">Корзинка для белья</a>
             <p class="card__data">Диаметр 15 см, высота 10 см</p>
             <b class="card__price">690 руб.</b>
+            <button class="card__button-cart" type="button" name="button">
+              <span class="visually-hidden">Добавить товар в корзину</span>
+            </button>
           </div>
           <div class="catalog__card card">
-            <img class="card__img" width="150" height="100" src="http://placehold.it/150x100" alt="Большая корзинка для игрушек">
-            <h3 class="card__title">Большая корзинка для игрушек</h3>
+            <a class="card__link-img" href="bol-korzinka.html">
+              <img class="card__img" width="150" height="100" src="http://placehold.it/150x100" alt="Большая корзинка для игрушек">
+            </a>
+            <a class="card__title">Большая корзинка для игрушек</a>
             <p class="card__data">Диаметр 30 см, высота 30 см</p>
             <b class="card__price">1500 руб.</b>
+            <button class="card__button-cart" type="button" name="button">
+              <span class="visually-hidden">Добавить товар в корзину</span>
+            </button>
           </div>
         </div>
       </section>
-      <!-- <section class="production">
-      </section> -->
+      <section class="production">
+        <h2 class="production__header production__header--video">Процесс производства</h2>
+        <video class="production__video-wrapper" width="150" height="100" src="http://placehold.it/150x100" autoplay controls></video>
+        <p class="production__announce">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <a class="production__order-button button" href="#">Сделать заказ</a>
+      </section>
     </main>
     <footer class="page-footer">
       <h2 class="visually-hidden">Подвал сайта</h2>
