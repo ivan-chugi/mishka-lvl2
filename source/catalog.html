@@ -2,110 +2,115 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>Каталог Мишка</title>
   </head>
   <body>
-    <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-img" src="http://placehold.it/150x100"
-        width="150" height="100" alt="Мишка - магазин товаров ручной работы для дома">
-      </a>
-      <button class="page-header__button-close" type="button" name="button">
-        <span class="visually-hidden">Закрыть меню</span>
-      </button>
-      <nav class="main-nav">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">Каталог товаров</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Вязание на заказ</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link site-list__link--search" href="#">Поиск по сайту</a>
-          </li>
-        </ul>
-        <ul class="main-nav__list user-list">
-          <li class="user-list__item">
-            <a class="user-list__link user-list__link--cart" href="#">Корзина: пока пуста</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main class="page-main">
-      <section class="catalog">
-        <h1 class="catalog__header section-header">Каталог товаров</h1>
-        <div class="catalog__wrapper">
-          <div class="catalog__card card">
-            <a class="card__link-img" href="zaycik.html">
-              <img class="card__img" width="150" height="100" src="http://placehold.it/150x100" alt="Зайчик-попрыгайчик">
-            </a>
-            <a class="card__title" href="zaycik.html">Зайчик-попрыгайчик</a>
-            <p class="card__data">Рост 30 см, вес 200 г</p>
-            <b class="card__price">1200 руб.</b>
-            <button class="card__button-cart" type="button" name="button">
-              <span class="visually-hidden">Добавить товар в корзину</span>
-            </button>
-          </div>
-          <div class="catalog__card card">
-            <a class="card__link-img" href="korzinka.html">
-              <img class="card__img" width="150" height="100" src="http://placehold.it/150x100" alt="Корзинка для белья">
-            </a>
-            <a class="card__title" href="korzinka.html">Корзинка для белья</a>
-            <p class="card__data">Диаметр 15 см, высота 10 см</p>
-            <b class="card__price">690 руб.</b>
-            <button class="card__button-cart" type="button" name="button">
-              <span class="visually-hidden">Добавить товар в корзину</span>
-            </button>
-          </div>
-          <div class="catalog__card card">
-            <a class="card__link-img" href="bol-korzinka.html">
-              <img class="card__img" width="150" height="100" src="http://placehold.it/150x100" alt="Большая корзинка для игрушек">
-            </a>
-            <a class="card__title">Большая корзинка для игрушек</a>
-            <p class="card__data">Диаметр 30 см, высота 30 см</p>
-            <b class="card__price">1500 руб.</b>
-            <button class="card__button-cart" type="button" name="button">
-              <span class="visually-hidden">Добавить товар в корзину</span>
-            </button>
-          </div>
-        </div>
-      </section>
-      <section class="production">
-        <h2 class="production__header production__header--video">Процесс производства</h2>
-        <video class="production__video-wrapper" width="150" height="100" src="http://placehold.it/150x100" autoplay controls></video>
-        <p class="production__announce">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <a class="production__order-button button" href="#">Сделать заказ</a>
-      </section>
-    </main>
-    <footer class="page-footer">
-      <h2 class="visually-hidden">Подвал сайта</h2>
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="#">
-              <span class="visually-hidden">Instagram</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">
-              <span class="visually-hidden">Facebook</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="#">
-              <span class="visually-hidden">Twitter</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
-          <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="copyright__logo-img" width="150" height="100" src="http://placehold.it/150x100" alt="HTML Academy">
+    <div class="container">
+      <header class="page-header">
+        <div class="logo-button-wrapper">
+          <a class="page-header__logo" href="index.html">
+            <img class="page-header__logo-img" src="img/logo-mobile.svg"
+            width="86" height="35" alt="Мишка - магазин товаров ручной работы для дома">
           </a>
+          <button class="page-header__button-close" type="button" name="button">
+            <span class="visually-hidden">Закрыть меню</span>
+          </button>
         </div>
-    </footer>
+        <nav class="main-nav">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Вязание на заказ</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--search" href="#">Поиск по сайту</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list user-list">
+            <li class="user-list__item">
+              <a class="user-list__link user-list__link--cart" href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="page-main">
+        <section class="catalog">
+          <h1 class="catalog__header section-header">Каталог товаров</h1>
+          <div class="catalog__wrapper">
+            <div class="catalog__card card">
+              <a class="card__link-img" href="zaycik.html">
+                <img class="card__img" width="150" height="100" src="http://placehold.it/150x100" alt="Зайчик-попрыгайчик">
+              </a>
+              <a class="card__title" href="zaycik.html">Зайчик-попрыгайчик</a>
+              <p class="card__data">Рост 30 см, вес 200 г</p>
+              <b class="card__price">1200 руб.</b>
+              <button class="card__button-cart" type="button" name="button">
+                <span class="visually-hidden">Добавить товар в корзину</span>
+              </button>
+            </div>
+            <div class="catalog__card card">
+              <a class="card__link-img" href="korzinka.html">
+                <img class="card__img" width="150" height="100" src="http://placehold.it/150x100" alt="Корзинка для белья">
+              </a>
+              <a class="card__title" href="korzinka.html">Корзинка для белья</a>
+              <p class="card__data">Диаметр 15 см, высота 10 см</p>
+              <b class="card__price">690 руб.</b>
+              <button class="card__button-cart" type="button" name="button">
+                <span class="visually-hidden">Добавить товар в корзину</span>
+              </button>
+            </div>
+            <div class="catalog__card card">
+              <a class="card__link-img" href="bol-korzinka.html">
+                <img class="card__img" width="150" height="100" src="http://placehold.it/150x100" alt="Большая корзинка для игрушек">
+              </a>
+              <a class="card__title">Большая корзинка для игрушек</a>
+              <p class="card__data">Диаметр 30 см, высота 30 см</p>
+              <b class="card__price">1500 руб.</b>
+              <button class="card__button-cart" type="button" name="button">
+                <span class="visually-hidden">Добавить товар в корзину</span>
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="production">
+          <h2 class="production__header production__header--video">Процесс производства</h2>
+          <video class="production__video-wrapper" width="150" height="100" src="http://placehold.it/150x100" autoplay controls></video>
+          <p class="production__announce">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <a class="production__order-button button" href="#">Сделать заказ</a>
+        </section>
+      </main>
+      <footer class="page-footer">
+        <h2 class="visually-hidden">Подвал сайта</h2>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="#">
+                <span class="visually-hidden">Instagram</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#">
+                <span class="visually-hidden">Facebook</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="#">
+                <span class="visually-hidden">Twitter</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+            <b class="copyright__text">Разработано:</b>
+            <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
+              <img class="copyright__logo-img" width="150" height="100" src="http://placehold.it/150x100" alt="HTML Academy">
+            </a>
+          </div>
+      </footer>
+    </div>
     <section class="modal">
       <h2 class="modal__header section-header">Добавить в корзину</h2>
       <b class="modal__tip">Выберите размер:</b>
