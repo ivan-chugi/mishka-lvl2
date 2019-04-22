@@ -1,5 +1,14 @@
 .user-list {
   .list-reset();
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-list__item {
+  .border-mob();
+  width: 100%;
 }
 
 .user-list__link {
@@ -8,7 +17,9 @@
   .nav-link-size();
   .center-content();
   .hover-active-bl();
-  .border-mob();
+
+  width: 320px;
+  margin: 0 auto;
 
   padding-left: 75px;
 
@@ -37,6 +48,34 @@
 
   &--cart:focus::before,
   &--cart:active::before {
+    opacity: 0.2;
+  }
+
+  &--search {
+    position: relative;
+  }
+
+  &--search::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+
+    position: absolute;
+    left: 30px;
+
+    opacity: 0.3;
+
+    background-image: url("../../img/icon-search.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--search:hover::before {
+    opacity: 1;
+  }
+
+  &--search:focus::before,
+  &--search:active::before {
     opacity: 0.2;
   }
 }
