@@ -16,14 +16,21 @@
 }
 
 .featured__category-name {
-  .featured-category();
   margin: 0;
 
   order: -2;
+
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
 }
 
 .featured__header {
-  .featured-green();
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: @grn-lite;
+  text-transform: uppercase;
 
   order: -1;
 }
@@ -63,7 +70,6 @@
 }
 
 .featured__price {
-  .flex-row-center();
 
   font-size: 17px;
   font-weight: 700;
@@ -71,6 +77,10 @@
   min-width: 260px;
   min-height: 25px;
   margin-bottom: 30px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .featured__order-button {

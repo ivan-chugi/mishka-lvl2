@@ -1,14 +1,21 @@
 .button {
   .link-reset();
-  .flex-row-center();
-  .featured-green();
 
   min-width: 260px;
   min-height: 50px;
   align-items: center;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
   color: @black;
 
   border: 2px solid @black;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 
   &:hover {
     background-color: rgba(68, 68, 68, 1);

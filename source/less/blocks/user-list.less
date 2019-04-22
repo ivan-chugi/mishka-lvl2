@@ -13,7 +13,6 @@
 
 .user-list__link {
   .link-reset();
-  .hover-active-bl();
 
   width: 320px;
   height: 80px;
@@ -27,6 +26,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active,
+  &:focus {
+    color: rgba(0, 0, 0, 0.3);
+  }
 
   &--cart {
     position: relative;
