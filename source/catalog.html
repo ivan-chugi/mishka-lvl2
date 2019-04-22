@@ -8,7 +8,7 @@
 <body>
   <header class="page-header">
     <div class="logo-button-wrapper">
-      <a class="page-header__logo" href="index.html">
+      <a class="page-header__logo" href="#">
         <img class="page-header__logo-img" src="img/logo-mobile.svg"
         width="86" height="35" alt="Мишка - магазин товаров ручной работы для дома">
       </a>
@@ -24,11 +24,11 @@
         <li class="site-list__item">
           <a class="site-list__link" href="form.html">Вязание на заказ</a>
         </li>
-        <li class="site-list__item">
-          <a class="site-list__link site-list__link--search" href="#">Поиск по сайту</a>
-        </li>
       </ul>
       <ul class="main-nav__list user-list">
+        <li class="user-list__item">
+          <a class="user-list__link user-list__link--search" href="#">Поиск по сайту</a>
+        </li>
         <li class="user-list__item">
           <a class="user-list__link user-list__link--cart" href="#">Корзина: пока пуста</a>
         </li>
@@ -83,8 +83,8 @@
   </main>
   <footer class="page-footer">
     <h2 class="visually-hidden">Подвал сайта</h2>
-    <div class="page-footer__social social">
-      <ul class="social__list">
+    <div class="page-footer__wrapper">
+      <ul class="page-footer__social social">
         <li class="social__item">
           <a class="social__link social__link--instagram" href="#">
             <span class="visually-hidden">Instagram</span>
@@ -101,12 +101,13 @@
           </a>
         </li>
       </ul>
-    </div>
-    <div class="page-footer__copyright copyright">
-      <b class="copyright__text">Разработано:</b>
-      <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-        <img class="copyright__logo-img" width="150" height="100" src="http://placehold.it/150x100" alt="HTML Academy">
-      </a>
+
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="copyright__logo-img" width="27" height="34" src="img/logo-htmlacademy.svg" alt="HTML Academy">
+        </a>
+      </div>
     </div>
   </footer>
   <section class="modal">
