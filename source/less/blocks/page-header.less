@@ -1,11 +1,16 @@
 .page-header {
+  width: auto;
   background-color: @bg-white;
 }
 
 .page-header__logo {
-  .center-content();
   .hover-active();
   .border-mob();
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .page-header__logo-img {
