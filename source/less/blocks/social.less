@@ -20,31 +20,21 @@
   margin: 0 15px;
   width: 30px;
   height: 30px;
+  margin-top: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   background-repeat: no-repeat;
   background-position: center;
 
-  &--instagram {
-    background-image: url("../img/icon-insta.svg");
+  &:hover .social__icon-path {
+    fill: #63d1bb;
   }
 
-  &--facebook {
-    background-image: url("../img/icon-fb.svg");
+  &:active .social__icon-path {
+    fill: #63d1bb;
+    opacity: 0.3;
   }
-
-  &--twitter {
-    background-image: url("../img/icon-twitter.svg");
-  }
-
-  // &--instagram:hover {
-  //
-  // }
-  //
-  // &--facebook:hover {
-  //
-  // }
-  //
-  // &--twitter:hover {
-  //
-  // }
 }

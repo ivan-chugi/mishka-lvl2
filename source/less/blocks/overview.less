@@ -1,13 +1,13 @@
 .overview {
   background-color: @bg-white;
 
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 }
 
 .overview__head {
   width: 320px;
   margin: 0 auto;
-  min-height: 280px;
+  min-height: 282px;
 
   background-image: url("../img/hero-mobile@1x.jpg");
   background-position: center;
@@ -22,13 +22,14 @@
 }
 
 .overview__header {
-  margin-top: 75px;
+  margin-top: 70px;
   width: 260px;
 
   font-family: inherit;
   font-size: 27px;
   font-weight: 700;
   line-height: 30px;
+  letter-spacing: 0;
 
   text-align: center;
 }
@@ -36,8 +37,8 @@
 .overview__list {
   .list-reset();
 
-  width: 320px;
-  margin: 0 auto;
+  // width: 320px;
+  // margin: 0 auto;
 }
 
 .overview__list-item {
@@ -51,10 +52,11 @@
 .overview__link {
   .link-reset();
 
-  // width: 320px;
-  height: 100px;
+  width: 320px;
+  height: 103px;
   padding: 0 30px;
-  // margin: 0 auto;
+  padding-top: -3px;
+  margin: 0 auto;
 
   position: relative;
 
@@ -63,7 +65,8 @@
     width: 61px;
     height: 61px;
     position: absolute;
-    right: 30px;
+    right: 26px;
+    margin-top: 3px;
 
     opacity: 0.5;
   }
@@ -81,9 +84,12 @@
   &--interior:focus::after,
   &--interior:active::after {
     opacity: 0.3;
+    top: 20px;
   }
 
   &--toys::after {
+    margin-top: -1px;
+
     background-image: url("../img/icon-toy.svg");
     background-position: center;
     background-repeat: no-repeat;
@@ -96,12 +102,18 @@
   &--toys:focus::after,
   &--toys:active::after {
     opacity: 0.3;
+    top: 20px;
   }
 
   &:active,
   &:focus {
     color: rgba(255, 255, 255, 0.3);
     min-height: 105px;
+
+    .overview__link-text {
+      position: relative;
+      top: -5px;
+    }
   }
 
   display: flex;
@@ -111,6 +123,7 @@
 
 .overview__link-text {
   width: 130px;
+  margin-top: -5px;
 
   font-family: inherit;
   font-size: 19px;
