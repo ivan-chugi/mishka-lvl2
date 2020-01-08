@@ -1,3 +1,7 @@
+.review-slider {
+  position: relative;
+}
+
 .review-slider__slide-wrapper {
   margin-bottom: 29px;
 }
@@ -24,4 +28,34 @@
 
   font-size: 17px;
   line-height: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .review-slider__slide-wrapper {
+    width: 668px;
+    margin-bottom: 50px;
+
+    position: relative;
+  }
+
+  .review-slider__text {
+    width: 646px;
+    position: relative;
+    margin-top: 23px;
+    margin-bottom: 57px;
+
+    font-size: 17px;
+    color: #444444;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .review-slider__slide-wrapper {
+    width: 800px;
+  }
+
+  .review-slider__text {
+    width: 800px;
+    margin-bottom: 40px;
+  }
 }

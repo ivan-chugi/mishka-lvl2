@@ -10,9 +10,9 @@
   min-height: 282px;
 
   background-image: url("../img/hero-mobile@1x.jpg");
-  background-position: center;
+  background-position: center -18px;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
   background-color: rgba(250, 250, 250, 1);
 
   display: flex;
@@ -36,9 +36,6 @@
 
 .overview__list {
   .list-reset();
-
-  // width: 320px;
-  // margin: 0 auto;
 }
 
 .overview__list-item {
@@ -75,6 +72,18 @@
     background-image: url("../img/icon-interior.svg");
     background-position: center;
     background-repeat: no-repeat;
+  }
+
+  &:hover {
+    .overview__link-text {
+      opacity: 0.7;
+    }
+  }
+
+  &:active {
+    .overview__link-text {
+      opacity: 0.3;
+    }
   }
 
   &--interior:hover::after {
@@ -127,5 +136,105 @@
 
   font-family: inherit;
   font-size: 19px;
+  font-weight: 700;
+  line-height: 24px;
   color: rgba(255, 255, 255, 1);
+}
+
+@media (min-width: @tablet-width) {
+  .overview {
+    width: auto;
+    margin: 0 auto;
+  }
+
+  .overview__head {
+    width: auto;
+    min-height: 545px;
+    background-position: center -82px;
+    background-image: url("../img/hero-tablet@1x.jpg");
+  }
+
+  .overview__list-wrapper {
+    width: auto;
+    background-color: @bg-overview;
+
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 24px;
+      position: absolute;
+      bottom: -13px;
+      left: 5px;
+
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-position: top;
+      background-repeat: repeat-x;
+      background-size: contain;
+      background-clip: border-box;
+    }
+  }
+
+  .overview__list {
+    width: 768px;
+    margin: 0 auto;
+    padding: 0 50px;
+
+    display: flex;
+    flex-direction: row;
+  }
+
+  .overview__header {
+    min-width: 550px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .overview__link {
+    min-width: 334px;
+    min-height: 117px;
+
+    &--toys::after {
+      right: 35px;
+    }
+  }
+
+  .overview__link-text {
+    margin-top: -1px;
+    margin-left: 7px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .overview {
+    background-color: @bg-overview;
+  }
+
+  .overview__header {
+    min-width: 650px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .overview__list {
+    min-width: 1150px;
+  }
+
+  .overview__link {
+    min-width: 525px;
+  }
+
+  .overview__list-wrapper {
+    &::after {
+      height: 35px;
+      bottom: -19px;
+      left: 0px;
+    }
+  }
 }

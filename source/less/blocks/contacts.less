@@ -13,6 +13,7 @@
 .contacts__header {
   margin-top: 37px;
   margin-bottom: 23px;
+  margin-left: -3px;
 
   font-size: 18px;
   font-weight: 700;
@@ -22,6 +23,7 @@
 .contacts__contact-data {
   padding: 0px;
   margin-bottom: 35px;
+  margin-left: -3px;
 }
 
 .contacts__label {
@@ -62,10 +64,104 @@
 
 .contacts__map-wrapper {
   margin-bottom: 35px;
+
+  position: relative;
+  left: -30px;
 }
 
 .contacts__adress-wrapper {
   display: block;
   font-weight: 400;
   width: 150px;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    width: 786px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 60px;
+
+    background-image: url("../img/icon-flag.svg");
+    background-position: top 5px right 63px;
+    background-repeat: no-repeat;
+  }
+
+  .contacts__header {
+    margin-left: 5px;
+    font-size: 43px;
+    margin-top: 30px;
+  }
+
+  .contacts__contact-data tbody {
+    margin-top: 34px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contacts__contact-data tr {
+    display: flex;
+  }
+
+  .contacts__adress {
+    &--bar {
+      margin-right: 53px;
+    }
+  }
+
+  .contacts__adress-wrapper {
+    min-width: 240px;
+  }
+
+  .contacts__contact-data {
+    margin-bottom: 52px;
+    font-size: 17px;
+  }
+
+  .contacts__write-button {
+    min-width: 232px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts {
+    width: 1150px;
+    margin-bottom: 105px;
+    padding-left: 215px;
+    padding-top: 74px;
+
+    flex-wrap: nowrap;
+    position: relative;
+
+    background-position: top 95px left 113px;
+  }
+
+  .contacts__contact-data tbody {
+    flex-direction: column;
+  }
+
+  .contacts__header {
+    width: 350px;
+    margin-bottom: 13px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .contacts__contact-data {
+    width: 350px;
+    margin-bottom: 77px;
+  }
+
+  .contacts__map-wrapper {
+    position: absolute;
+    top: 33px;
+    left: 574px;
+  }
+
+  .contacts__write-button {
+    margin-left: 10px;
+  }
 }

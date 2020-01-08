@@ -13,6 +13,62 @@
   margin: 0 auto;
 }
 
+.page-footer__logo-img {
+  display: none;
+}
+
 .page-footer__social {
   .border-mob();
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__wrapper {
+    width: 786px;
+    min-height: 145px;
+    padding: 0 50px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-footer__logo {
+    margin-left: 10px;
+    margin-right: 78px;
+    margin-top: -10px;
+  }
+
+  .page-footer__logo-img {
+    display: block;
+  }
+
+  .page-footer__social {
+    border: none;
+  }
+
+  .page-footer__copyright {
+    margin-right: 9px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    padding-top: 3px;
+  }
+
+  .page-footer__wrapper {
+    width: 1150px;
+    justify-content: space-between;
+  }
+
+  .page-footer__logo {
+    margin-left: 0px;
+    margin-right: 78px;
+    margin-top: -10px;
+  }
+
+  .page-footer__copyright {
+    margin-right: 0px;
+  }
 }

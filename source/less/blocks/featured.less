@@ -33,6 +33,11 @@
   align-items: flex-start;
 }
 
+.featured__head-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .featured__category-name {
   margin: 0;
 
@@ -75,12 +80,14 @@
 
 .featured__spec {
   min-width: 70px;
+  margin-left: -3px;
   display: inline-block;
   margin-right: 30px;
 }
 
 .featured__spec-value {
   display: flex;
+  margin-left: -3px;
   flex-direction: row;
   justify-content: flex-start;
 }
@@ -89,10 +96,13 @@
   width: 260px;
   height: 315px;
   margin-bottom: 24px;
+
+  background-image: url("../img/triple-set-mobile@1x.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .featured__price {
-
   font-size: 17px;
   font-weight: 700;
 
@@ -107,4 +117,167 @@
 
 .featured__order-button {
   margin-bottom: 43px;
+}
+
+@media (min-width: @tablet-width) {
+  .featured {
+    width: auto;
+    margin-bottom: 31px;
+
+    position: relative;
+
+    &::after {
+      height: 15px;
+      opacity: 0.6;
+    }
+  }
+
+  .featured__wrapper {
+    width: 768px;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+
+  .featured__head-wrapper {
+    width: 100%;
+    margin-top: 46px;
+    margin-bottom: 46px;
+
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .featured__category-name {
+    margin-left: -5px;
+
+    font-size: 43px;
+    line-height: 50px;
+
+    order: -2;
+  }
+
+  .featured__header {
+    width: 80px;
+    margin-right: 25px;
+    margin-top: 10px;
+
+    line-height: 17px;
+    text-align: center;
+  }
+
+  .featured__body-wrapper {
+    max-width: 334px;
+    max-height: 482px;
+    padding-right: 45px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .featured__desription {
+    margin-top: 0;
+    margin-bottom: 35px;
+    max-width: 290px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .featured__img {
+    width: 333px;
+    height: 404px;
+    margin-top: 10px;
+    margin-bottom: 24px;
+    margin-left: 45px;
+
+    order: 2;
+
+    background-image: url("../img/triple-set-tablet@1x.jpg");
+  }
+
+  .featured__specs {
+    margin-bottom: 55px;
+  }
+
+  .featured__price {
+    width: 290px;
+    margin-bottom: 33px;
+
+    font-size: 20px;
+  }
+
+  .featured__order-button {
+    width: 290px;
+    margin-bottom: 70px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .featured {
+    &::after {
+      height: 20px;
+      opacity: 0.6;
+    }
+  }
+
+  .featured__wrapper {
+    width: 1150px;
+  }
+
+  .featured__head-wrapper {
+    justify-content: flex-start;
+  }
+
+  .featured__header {
+    margin-top: 94px;
+    margin-left: 44px;
+    font-weight: 700;
+
+    font-size: 17px;
+    order: 1;
+  }
+
+  .featured__category-name {
+    margin-left: 23px;
+    margin-top: 78px;
+
+    font-size: 53px;
+    line-height: 57px;
+
+    order: 2;
+  }
+
+  .featured__body-wrapper {
+    max-height: 800px;
+    margin-left: 175px;
+    margin-bottom: 25px;
+  }
+
+  .featured__img {
+    width: 525px;
+    height: 636px;
+    // margin: 0;
+    margin-top: 10px;
+    margin-bottom: 24px;
+    margin-left: 45px;
+
+    order: 2;
+    z-index: -1;
+    position: absolute;
+    top: 63px;
+    right: 49px;
+
+    background-image: url("../img/triple-set-desktop@1x.jpg");
+    // background-size: cover;
+  }
+
+  .featured__desription {
+    margin-top: 2px;
+    margin-bottom: 45px;
+  }
+
+  .featured__specs {
+    margin-bottom: 110px;
+  }
 }

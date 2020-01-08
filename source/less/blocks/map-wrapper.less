@@ -1,6 +1,6 @@
 .map-wrapper {
-  position: relative;
-  left: -30px;
+  // position: relative;
+  // left: -30px;
 }
 
 .map-wrapper__link {
@@ -9,7 +9,50 @@
   .link-reset();
 }
 
-.map-wrapper__img {
+.map-wrapper__img-mob {
   width: 320px;
   height: 457px;
+}
+
+.map-wrapper__img-tab {
+  display: none;
+}
+
+.map-wrapper__img-desk {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .map-wrapper {
+    width: 768px;
+    margin-bottom: 56px;
+  }
+
+  .map-wrapper__img-mob {
+    display: none;
+  }
+  .map-wrapper__img-tab {
+    width: auto;
+    margin-left: -10px;
+
+    display: block;
+  }
+
+  .map-wrapper__img-desk {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map-wrapper {
+    width: 525px;
+  }
+
+  .map-wrapper__img-tab {
+    display: none;
+  }
+
+  .map-wrapper__img-desk {
+    display: block;
+  }
 }

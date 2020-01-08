@@ -1,0 +1,26 @@
+.additional-list {
+  display: none;
+  text-decoration: none;
+
+  order: 3;
+}
+
+.additional-list__link {
+  .link-reset();
+}
+
+@media (min-width: @desktop-width) {
+  .additional-list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .additional-list__link {
+    width: 175px;
+    margin-top: 10px;
+    margin-right: 45px;
+
+    font-size: 15px;
+    font-weight: 700;
+  }
+}
